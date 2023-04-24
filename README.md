@@ -37,3 +37,11 @@ spec:
       - "demo.foo.com"
       secretName: wildcard-foo-com
 ```
+
+##### Kubeadm init
+```
+ sudo kubeadm init \
+   --cri-socket unix:///run/containerd/containerd.sock \
+   --pod-network-cidr 172.16.0.0/16 \
+   --apiserver-advertise-address 192.168.56.10 
+```
