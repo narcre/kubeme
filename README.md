@@ -45,3 +45,8 @@ spec:
    --pod-network-cidr 172.16.0.0/16 \
    --apiserver-advertise-address 192.168.56.10 
 ```
+
+##### Join Command
+```
+ kubeadm token create --print-join-command
+```
